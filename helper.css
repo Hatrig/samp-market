@@ -1,0 +1,345 @@
+@font-face {
+  font-family: "UniNeueRegular";
+  src: url(../fonts/UniNeueRegular/UniNeueRegular.eot);
+  src: url(../fonts/UniNeueRegular/UniNeueRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/UniNeueRegular/UniNeueRegular.woff) format("woff"), url(../fonts/UniNeueRegular/UniNeueRegular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UniNeueHeavy";
+  src: url(../fonts/UniNeueHeavy/UniNeueHeavy.eot);
+  src: url(../fonts/UniNeueHeavy/UniNeueHeavy.eot?#iefix) format("embedded-opentype"), url(../fonts/UniNeueHeavy/UniNeueHeavy.woff) format("woff"), url(../fonts/UniNeueHeavy/UniNeueHeavy.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UniNeueBook";
+  src: url(../fonts/UniNeueBook/UniNeueBook.eot);
+  src: url(../fonts/UniNeueBook/UniNeueBook.eot?#iefix) format("embedded-opentype"), url(../fonts/UniNeueBook/UniNeueBook.woff) format("woff"), url(../fonts/UniNeueBook/UniNeueBook.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+h1 {
+  font-size: 48px;
+  font-family: "UniNeueHeavy";
+  font-weight: 700;
+  color: #233755;
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "UniNeueHeavy";
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "UniNeueHeavy";
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: "UniNeueHeavy";
+}
+
+.nav-button-etc {
+  font-size: 16px;
+  font-family: "OpenSansSemiBold";
+}
+
+.description-lato {
+  font-size: 16px;
+  font-family: "OpenSansRegular";
+}
+
+.smaller-lato {
+  font-size: 12px;
+  font-family: "OpenSansSemiBold";
+}
+
+.caption {
+  font-size: 14px;
+  font-family: "OpenSansSemiBold";
+}
+
+.btn-primary {
+  padding: 16px 22px;
+  border: 1px solid #4B5BEB;
+  background: #4B5BEB;
+  border-radius: 12px;
+  color: #fff;
+  font-family: "OpenSansSemiBold";
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #FFFFFF;
+  border: 1px solid #4B5BEB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-secondary {
+  padding: 16px 22px;
+  border: 1px solid #EBF2FB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "OpenSansSemiBold";
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  border: 1px solid #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-deactivate {
+  padding: 16px 22px;
+  border: 1px solid #EBF2FB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "OpenSansSemiBold";
+  color: #899DB7;
+}
+
+.btn-deactivate:hover {
+  cursor: not-allowed;
+}
+
+.btn-auth-primary {
+  padding: 16px 22px;
+  border: 1px solid #4B5BEB;
+  background: #4B5BEB;
+  border-radius: 12px;
+  color: #fff;
+  font-family: "OpenSansSemiBold";
+  transition: 0.3s;
+}
+
+.btn-auth-primary::after {
+  content: url("../icons/Logged-white.svg");
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.btn-auth-primary:hover {
+  background: #FFFFFF;
+  border: 1px solid #4B5BEB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-auth-primary:hover::after {
+  content: url("../icons/Logged.svg");
+}
+
+.btn-auth-secondary {
+  padding: 16px 22px;
+  border: 1px solid #EBF2FB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "OpenSansSemiBold";
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-auth-secondary::after {
+  content: url("../icons/Logged.svg");
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.btn-auth-secondary:hover {
+  border: 1px solid #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-reg-primary {
+  padding: 16px 22px;
+  border: 1px solid #4B5BEB;
+  background: #4B5BEB;
+  border-radius: 12px;
+  color: #fff;
+  font-family: "OpenSansSemiBold";
+  transition: 0.3s;
+}
+
+.btn-reg-primary::after {
+  content: url("../icons/Right-white.svg");
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.btn-reg-primary:hover {
+  background: #FFFFFF;
+  border: 1px solid #4B5BEB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-reg-primary:hover::after {
+  content: url("../icons/Right.svg");
+}
+
+.btn-reg-secondary {
+  padding: 16px 22px;
+  border: 1px solid #EBF2FB;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "OpenSansSemiBold";
+  color: #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-reg-secondary::after {
+  content: url("../icons/Right.svg");
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.btn-reg-secondary:hover {
+  border: 1px solid #4B5BEB;
+  transition: 0.3s;
+}
+
+.btn-catalog {
+  padding: 20px 36px;
+  border: 1px solid #4B5BEB;
+  background: linear-gradient(180deg, #4B5BEB 0%, #3540D7 100%);
+  border-radius: 12px;
+  color: #fff;
+  font-family: "OpenSansSemiBold";
+  box-shadow: 0px 16px 31px rgba(96, 110, 243, 0.17);
+  transition: 0.3s;
+}
+
+.btn-catalog::before {
+  content: url("../icons/Catalog-white.svg");
+  position: relative;
+  top: 7px;
+  right: 10px;
+}
+
+.btn-catalog:hover {
+  box-shadow: 0px 16px 31px rgba(96, 110, 243, 0.27);
+  transition: 0.3s;
+}
+
+.btn-vk-auth {
+  padding: 20px 28px;
+  border: 1px solid #EBF2FB;
+  background: #EBF2FB;
+  border-radius: 12px;
+  color: #4B5BEB;
+  font-family: "OpenSansSemiBold";
+  transition: 0.3s;
+}
+
+.btn-vk-auth::before {
+  content: url("../icons/Auth.svg");
+  position: relative;
+  top: 7px;
+  right: 10px;
+}
+
+.btn-vk-auth:hover {
+  box-shadow: 0px 16px 31px rgba(96, 110, 243, 0.07);
+  transition: 0.3s;
+}
+
+.btn-light {
+  padding: 16px 22px;
+  background: #fff;
+  border-radius: 12px;
+  font-family: "OpenSansSemiBold";
+  color: #899DB7;
+  transition: 0.3s;
+}
+
+body {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.main_header {
+  background: #fff;
+  box-shadow: inset 0px -1px 0px #EBF2FB;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 102px;
+}
+
+.logo {
+  margin-right: 48px;
+  font-family: Uni Neue;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: #233755;
+}
+
+.nav-link {
+  color: #899DB7;
+  margin-right: 32px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
